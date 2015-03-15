@@ -21,8 +21,8 @@ ro.build.host=SEP-91
 ro.build.tags=release-keys
 ro.product.model=SAMSUNG-SGH-I317
 ro.product.brand=samsung
-ro.product.name=t0lteatt
-ro.product.device=t0lteatt
+ro.product.name=t0lte
+ro.product.device=t0lte
 ro.product.board=smdk4x12
 ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
@@ -33,10 +33,10 @@ ro.product.locale.region=GB
 ro.wifi.channels=
 ro.board.platform=exynos4
 # ro.build.product is obsolete; use ro.product.device
-ro.build.product=t0lteatt
+ro.build.product=t0lte
 # Do not try to parse ro.build.description or .fingerprint
-ro.build.description=t0lteatt-user 4.1.1 JRO03C I317UCALJ2 release-keys
-ro.build.fingerprint=samsung/t0lteatt/t0lteatt:4.1.1/JRO03C/I317UCALJ2:user/release-keys
+ro.build.description=t0lte-user 4.1.1 JRO03C I317UCALJ2 release-keys
+ro.build.fingerprint=samsung/t0lte/t0lte:4.1.1/JRO03C/I317UCALJ2:user/release-keys
 ro.build.characteristics=att
 # Samsung Specific Properties
 ro.build.PDA=I317UCALJ2
