@@ -23,7 +23,18 @@
 
 # GPS
 BOARD_GPS_SET_PRIVACY := true
+LZMA_RAMDISK_TARGETS := boot,recovery 
 
-# inherit from the proprietary version
--include vendor/samsung/t0lte/BoardConfigVendor.mk
-
+#twrp
+TARGET_RECOVERY_FSTAB := device/samsung/t0lte/recovery/twrp.fstab
+TW_THEME := portrait_hdpi
+RECOVERY_SDCARD_ON_DATA := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
+TW_INCLUDE_CRYPTO := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_NO_USB_STORAGE := true
+TW_MAX_BRIGHTNESS := 255
+TW_NO_EXFAT_FUSE := true
+TW_NO_EXFAT := true
+TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
