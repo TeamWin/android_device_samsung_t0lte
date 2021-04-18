@@ -32,7 +32,7 @@ TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_SOURCE := kernel/samsung/kona
 ifeq ($(TARGET_VOICE_TECH), cdma)
 TARGET_KERNEL_CONFIG := lineageos_t0ltecdma_defconfig
 else
@@ -48,6 +48,9 @@ endif
 TARGET_RECOVERY_FSTAB := device/samsung/t0lte/rootdir/fstab.smdk4x12
 TARGET_RECOVERY_DENSITY := mdpi
 RECOVERY_FSTAB_VERSION := 2
+
+# TWRP
+TW_THEME := portrait_mdpi
 
 # F2FS
 PRODUCT_PACKAGES += \
@@ -68,7 +71,7 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := mdm9x35
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := t0lte,t0ltexx,GT-N7105,t0ltedv,GT-N7105T,t0lteatt,SGH-I317,t0ltetmo,SGH-T889,t0ltecan,t0ltevl,SGH-I317M
+TARGET_OTA_ASSERT_DEVICE := t0lte,t0ltexx,GT-N7105,t0ltedv,GT-N7105T,t0lteatt,SGH-I317,t0ltetmo,SGH-T889,t0ltecan,t0ltevl,SGH-I317M,m0,p4notelte,n8020,GT-N8020
 
 # Selinux
 BOARD_SEPOLICY_DIRS += device/samsung/t0lte/selinux
