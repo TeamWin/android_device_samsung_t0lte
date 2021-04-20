@@ -33,11 +33,8 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/kona
-ifeq ($(TARGET_VOICE_TECH), cdma)
-TARGET_KERNEL_CONFIG := lineageos_t0ltecdma_defconfig
-else
-TARGET_KERNEL_CONFIG := lineageos_t0lte_defconfig
-endif
+TARGET_KERNEL_CONFIG := twrp_t0lte_defconfig
+
 
 # Init
 ifneq ($(WITH_TWRP), true)
